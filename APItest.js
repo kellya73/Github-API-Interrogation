@@ -19,6 +19,7 @@ github.users.getFollowingForUser({
   for (x=0; x<res.data.length; x++){
     console.log(res.data[x].login)
   }
+  console.log("\nFollowing = " + (x))
 })
 
 github.users.getFollowersForUser({
@@ -32,4 +33,5 @@ github.users.getFollowersForUser({
   for (x=0; x<res.data.length; x++){
     console.log(res.data[x].login)
   }
+  console.log("\nFollowers = " + (x))
 })
